@@ -16,7 +16,7 @@ services:
       - static_volume:/usr/src/app/staticfiles
       - media_volume:/usr/src/app/mediafiles
     ports:
-      - "8080:80"   # guest:host
+      - "80:8000"   # guest:host
     depends_on:
       - web
 
